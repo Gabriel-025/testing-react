@@ -14,7 +14,4 @@ export const StyledApp = styled.div`
     height: 100%;
     width: 100%;
   }
-  @media (min-width: 600px) {
-    background: #fefefe;
-  }
 `;
