@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { Styledbtn, StyledMain} from './styles';
 import api from '../../services/api';
 import 'antd/dist/antd.css';
