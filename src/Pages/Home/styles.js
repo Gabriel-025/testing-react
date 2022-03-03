@@ -20,7 +20,7 @@ margin-top:50px;
     white-space: nowrap;
   ::-webkit-scrollbar {
     width: 0;  
-    background: grey; 
+    background: transparent; 
 .scroll {
     display: inline-flex;
     white-space: nowrap;
