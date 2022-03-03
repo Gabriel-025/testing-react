@@ -8,7 +8,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 `;
-export const StyledMain = styled.main`
+export const StyledMain =  styled.main`
 overflow: hidden;
 width: 100%;
 margin-top:50px;
