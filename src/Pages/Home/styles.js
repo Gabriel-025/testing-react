@@ -9,10 +9,11 @@ justify-content:center;
 `;
 
 export const StyledMain =  styled.main`
-overflow: hidden;
+ overflow: hidden;
 width: 100%;
 margin-top:50px;
   div.scrollmenu {
+    touch-action: pan-y;
     width: 100%;
 	  padding: 5px;
     decoration:none;

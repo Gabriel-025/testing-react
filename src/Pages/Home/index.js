@@ -10,7 +10,7 @@ import SpinLoad from '../../components/Spinning';
 // import Resultados from '../../components/Results';
 function Home() {
 
-    const [lista, setLista] = useState([]);
+    const [list, setList] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
   const [showElement, setShowElement] = useState(false);
@@ -20,13 +20,14 @@ function Home() {
         loadLista();
       };
 
-         const loadLista = async () => {
+  const loadLista = async () => {
             setIsLoading(true);
             const response = await api.get('/');
-            setLista(response.data.result.list);
+            setList(response.data.result.list);
             setIsLoading(false);
+    console.log(loadLista)
           };
-         console.log(loadLista)
+         
      
   return (
         <>   
@@ -38,13 +39,13 @@ function Home() {
                <StyledMain >
                     { isLoading === true  ?
                             <Styledbtn  >
-                              <SpinLoad/>
+                               <SpinLoad/>
                             </Styledbtn> 
                      : null}   
                       { showElement === true ? 
                         <div className='scrollmenu'>
                           <div  className='scroll'>
-                            <CardEvent   itens={lista} />
+                            <CardEvent   itens={list} />
                             </div>
                          </div>
                       :  null } 

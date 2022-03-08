@@ -6,7 +6,7 @@ import { formattedDate } from '../../Controler/';
 
 
 function CardEvent({ itens }) {
-  console.log(itens)
+  
   return(
        <StyledCard>
                     {itens.map((item, index) => {
