@@ -11,7 +11,7 @@ function CardEvent({ itens }) {
        <StyledCard>
                     {itens.map((item, index) => {
                        return index <= 2 && (
-                          <Col style={{paddingLeft:'10px',paddingRight:'10px',maxWidth:'97%'}}  xs={12} sm={6} lg={4} key={index}>
+                          <Col style={{paddingLeft:'8px',paddingRight:'8px',maxWidth:'97%'}}  xs={12} sm={6} lg={4} key={index}>
                            <StyledCard style={{backgroundImage: `url(${item.coverImagePath})`}}  alt=''  key={item.id}>
                             <div className='gradient'>
                               <div>  
