@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'secret_api',
+  baseURL: process.env.REACT_APP_API_TESTING,
 });
 export default api;
