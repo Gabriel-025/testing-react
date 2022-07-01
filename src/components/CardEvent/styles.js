@@ -10,7 +10,7 @@ color: #ffff;
 width: 100%;
 height:310px;
 @media (max-width: 600px) {
-  width: 100%;
+  width:100%;
   height:290px;
   }
 .city-event{
